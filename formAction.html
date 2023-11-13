@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/styleFormAction.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+
+    <title>Recebimento de dados</title>
+</head>
+<body onresize="mudouTamanho()">
+    <script type="text/javascript" src="script/script.js"></script>
+    <header>
+        <div class="caixa-logo">
+            <a href="index.html"><img class="imagem-logo" src="imagens/logo-tech.png" alt="tech logo"></a>
+        </div>
+
+        <i id="menu-hamburguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <nav id="itens">
+            <ul>
+                <li><a class="menu-pagina" href="index.html" target="_self">Início</a></li>
+                <li><a class="menu-pagina" href="form.html" target="_self">Inscreva-se</a></li>
+                <li><a class="menu-pagina" href="about.html" target="_self">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <script type="text/javascript" src="script/script.js"></script>
+            <h1>Recebimento dos dados</h1>
+            <div class="texto">
+                <p>Cadastro bem sucedido. Um cartão de confirmação foi gerado.</p>
+            </div>
+
+            <div id="container">
+                <div id="janela">
+                    <div class="janela-titulo">
+                        <p>Texto</p>
+                    </div>
+                    <div class="janela-conteudo">
+                        <div id="cartao">
+                            <div class="caixa-logo"><img class="imagem-logo" src="imagens/logo-tech.png" alt=""></div>
+                            <table>
+                                <tr>
+                                    <th colspan="2"><div class="titulo-tabela">Participante</div></th>
+                                </tr>
+                                <script lang="javascript">
+                                    var params = new Array();
+                                    params = getParameters();
+                                    for (let [key, value] of Object.entries(params)) {
+                                        if (key == 'agree-term') {
+                                            continue;
+                                        }
+                                        document.write("<tr><td><strong>" + key + "</strong></td><td>" + value + "</td></tr>");
+                                    }
+                                </script>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="botao-retornar" type="button" onclick="window.location.href='index.html'">&lt;&lt; Retornar</button>
+    </main>
+    
+    <footer>
+        <div id="footer-logo">
+            <img class="imagem-logo" src="imagens/logo-tech.png" alt="tech logo">
+        </div>
+        <div id="compartilhar">
+            <ul>
+                <div class="botao-rede-social">
+                    <li><i class="fa fa-twitter fa-2x" aria-hidden="true"><a href="#" target="_blank"></a></i></li>
+                </div>
+                <div class="botao-rede-social">
+                    <li><i class="fa fa-instagram fa-2x" aria-hidden="true"><a href="#" target="_blank"></a></i></li>
+                </div>
+                <div class="botao-rede-social">
+                    <li><i class="fa fa-facebook-official fa-2x" aria-hidden="true"><a href="#" target="_blank"></a></i></li>
+                </div>
+                <div class="botao-rede-social">
+                    <li><i class="fa fa-twitch fa-2x" aria-hidden="true"><a href="#" target="_blank"></a></i></li>
+                </div>
+                <div class="botao-rede-social">
+                    <li><i class="fa fa-youtube-play fa-2x" aria-hidden="true"><a href="#" target="_blank"></a></i></li>
+                </div>
+            </ul>
+        </div>
+
+        <div id="direitos">
+            <p>&copy; 2023 Todos os direitos reservados</p>
+            <p>Desenvolvido por Camila Harumi.</p>
+        </div>
+    </footer>
+</body>
+</html>

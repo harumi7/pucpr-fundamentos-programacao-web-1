@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/styleForm.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+
+    <title>Inscreva-se</title>
+</head>
+<body onresize="mudouTamanho()">
+    <script type="text/javascript" src="script/script.js"></script>
+    <header>
+        <div class="caixa-logo">
+            <a href="index.html"><img class="imagem-logo" src="imagens/logo-tech.png" alt="tech logo"></a>
+        </div>
+
+        <i id="menu-hamburguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <nav id="itens">
+            <ul>
+                <li><a class="menu-pagina" href="index.html" target="_self">Início</a></li>
+                <li><a id="active" class="menu-pagina" href="form.html" target="_self">Inscreva-se</a></li>
+                <li><a class="menu-pagina" href="about.html" target="_self">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="janela">
+            <div class="titulo-janela">
+                <p>Formulário</p>
+            </div>
+            <div id="container">
+                <div id="caixa-esquerda">
+                    <h2>Formulário de inscrição</h2>
+                    <form action="formAction.html" method="get" autocomplete="off">
+                        <fieldset>
+                            <div class="campo">
+                                <label for="nome">Nome:</label>
+                                <input type="text" id="nome" name="Nome" required minlength="2">
+                            </div>
+                            <div class="campo">
+                                <label for="snome">Sobrenome:</label>
+                                <input type="text" id="snome" name="Sobrenome" required minlength="2">
+                            </div>
+                            <div class="campo">
+                                <label for="email">E-mail:</label>
+                                <input type="email" name="E-mail" id="email" required>
+                            </div>
+                            <div class="campo">
+                                <label for="data-nascimento">Data de nascimento:</label>
+                                <input type="date" id="data-nascimento" name="Data de nascimento" required>
+                            </div>
+                            <div class="campo">
+                                <label for="pais">País:</label>
+                                <select id="pais" name="País" required>
+                                    <option value="" selected disabled hidden>Selecione</option>
+                                    <option value="Brasil">Brasil</option>
+                                    <option value="Outro">Outro</option>
+                                </select>
+                            </div>
+                            <div class="campo">
+                                <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" required>
+                                <label for="agree-term" class="label-agree-term">Eu concordo com os <a href="#">termos de serviço</a>.</label>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div id="botoes">
+                                <button type="submit" id="botao-enviar">Enviar</button>
+                                <button type="reset" id="botao-limpar-dados">Limpar dados</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div id="caixa-direita">
+                    <div class="conteudo">
+                        <h1>Inscreva-se</h1>
+                        <ol type="1">
+                            <li>
+                                <p>Após realizar a inscrição, um cartão de identificação contendo os seus dados inseridos será gerado.</p>
+                            </li>
+                            <li>
+                                <p>Uma mensagem automática será enviada para o endereço de e-mail cadastrado para dar procedimento à inscrição.</p>
+                            </li>
+                        </ol>
+                        <p>Em caso de dúvidas, contate-nos:</p>
+                        <div id="contato">
+                            <ul>
+                                <div class="botao-contato">
+                                    <li><i class="fa fa-envelope fa-2x" aria-hidden="true"><a href="#" target="_blank"></a></i></li>
+                                </div>
+                                <div class="botao-contato">
+                                    <li><i class="fa fa-whatsapp fa-2x" aria-hidden="true"><a href="#" target="_blank"></a></i></li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer-logo">
+            <img class="imagem-logo" src="imagens/logo-tech.png" alt="tech logo">
+        </div>
+        <div id="compartilhar">
+            <ul>
+                <div class="botao-rede-social">
+                    <li><i class="fa fa-twitter fa-2x" aria-hidden="true"><a href="#" target="_blank"></a></i></li>
+                </div>
+                <div class="botao-rede-social">
+                    <li><i class="fa fa-instagram fa-2x" aria-hidden="true"><a href="#" target="_blank"></a></i></li>
+                </div>
+                <div class="botao-rede-social">
+                    <li><i class="fa fa-facebook-official fa-2x" aria-hidden="true"><a href="#" target="_blank"></a></i></li>
+                </div>
+                <div class="botao-rede-social">
+                    <li><i class="fa fa-twitch fa-2x" aria-hidden="true"><a href="#" target="_blank"></a></i></li>
+                </div>
+                <div class="botao-rede-social">
+                    <li><i class="fa fa-youtube-play fa-2x" aria-hidden="true"><a href="#" target="_blank"></a></i></li>
+                </div>
+            </ul>
+        </div>
+
+        <div id="direitos">
+            <p>&copy; 2023 Todos os direitos reservados</p>
+            <p>Desenvolvido por Camila Harumi.</p>
+        </div>
+    </footer>
+</body>
+</html>

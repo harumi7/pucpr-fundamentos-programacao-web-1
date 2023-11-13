@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/styleAbout.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+
+    <title>Sobre</title>
+</head>
+<body onresize="mudouTamanho()">
+    <script type="text/javascript" src="script/script.js"></script>
+    <header>
+        <div class="caixa-logo">
+            <a href="index.html"><img class="imagem-logo" src="imagens/logo-tech.png" alt="tech logo"></a>
+        </div>
+
+        <i id="menu-hamburguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <nav id="itens">
+            <ul>
+                <li><a class="menu-pagina" href="index.html" target="_self">Início</a></li>
+                <li><a class="menu-pagina" href="form.html" target="_self">Inscreva-se</a></li>
+                <li><a id="active" class="menu-pagina" href="about.html" target="_self">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre">
+            <div class="computador">
+                <div class="area-trabalho">
+                    <div class="icones-area-trabalho">
+                        <ul>
+                            <li class="icone">
+                                <!--Abrir o modal-->
+                                <button id="tech-modal-button" onclick="openModal('tech')">
+                                    <i class="fa fa-users fa-4x" aria-hidden="true"></i>
+                                    <p>Sobre a TECH</p>
+                                </button>
+                            <li class="icone">
+                                <!--Abrir o modal-->
+                                <button id="atividade-somativa-modal-button" onclick="openModal('atividade-somativa')">
+                                    <i class="fa fa-pencil-square-o fa-4x" aria-hidden="true"></i>
+                                    <p>Atividade somativa</p>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--Modal-->
+                    <div id="tech-modal" class="modal">
+                        <div class="titulo-janela">
+                            <p>TECH</p>
+                            <div class="botoes-janela">
+                                <div class="botao-minimize-icon"><i class="fa fa-window-minimize" aria-hidden="true"></i></div>
+                                <div class="botao-maximize-icon"><i class="fa fa-window-maximize" aria-hidden="true"></i></div>
+                                <div class="botao-close-icon"><i class="fa fa-close" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
+                        <!-- Conteúdo do modal -->
+                        <div class="conteudo-modal">
+                            <section id="quem-somos">
+                                <h2>Quem somos?</h2>
+                                <article>
+                                    <h3>Introdução</h3>
+                                    <p>Somos a TECH, o maior evento anual de tecnologia do Brasil, que recebe diversos participantes e convidados do mundo inteiro em todas as suas edições. Temos como objetivo trazer entretenimento para o público com as diversas atrações disponíveis durante o período do evento, e queremos que você participe dessa experiência conosco!</p>
+                                    <h3>O que é TECH?</h3>
+                                    <p>Embora o nome TECH seja simples e frequentemente usado por empresas de tecnologia, possui um grande significado para a nossa história, pois carrega o nome da criadora do evento nas letras "CH".</p>
+                                </article>
+                            </section>
+                        </div>
+                    </div>
+
+                    <!--Modal-->
+                    <div id="atividade-somativa-modal" class="modal">
+                        <div class="titulo-janela">
+                            <p>Atividade somativa</p>
+                            <div class="botoes-janela">
+                                <div class="botao-minimize-icon"><i class="fa fa-window-minimize" aria-hidden="true"></i></div>
+                                <div class="botao-maximize-icon"><i class="fa fa-window-maximize" aria-hidden="true"></i></div>
+                                <div class="botao-close-icon"><i class="fa fa-close" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
+                        <!-- Conteúdo do modal -->
+                        <div class="conteudo-modal">
+                            <div id="pagina">
+                                <div id="esquerda">
+                                    <section id="apresentacao">
+                                        <h2>Apresentação</h2>
+                                        <article>
+                                            <h3>Introdução</h3>
+                                            <div id="texto-sobre-atividade">
+                                                <p>O desenvolvimento desse site tem como objetivo explorar as capacidades que o conjunto de linguagens <abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr> e JavaScript oferece.</p>
+                                                <p>Para prover mais profundidade à atividade e possibilitar a utilização de diversos recursos, o site foi desenvolvido simulando um evento de tecnologia.</p>
+                                            </div>
+                            
+                                            <h4>Percentual de utilização das linguagens HTML, CSS e JavaScript</h4>
+                                            <p>*Os dados apresentados abaixo são apenas estimativas e não representam totalmente a realidade do código.</p>
+                                            <div id="linguagens">
+                                                <ul>
+                                                    <li class="linguagem">
+                                                        <span>HTML</span>
+                                                        <span class="percentual">
+                                                            <div style="width: 50%;"></div>
+                                                        </span>
+                                                    </li>
+                                                    <li class="linguagem">
+                                                        <span>CSS</span>
+                                                        <span class="percentual">
+                                                            <div style="width: 40%;"></div>
+                                                        </span>
+                                                    </li>
+                                                    <li class="linguagem">
+                                                        <span>JavaScript</span>
+                                                        <span class="percentual">
+                                                            <div style="width: 10%;"></div>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                        <article>
+                                            <h3>Componentes do site</h3>
+                                            <ol type="1">
+                                                <dl>
+                                                    <div class="topico">
+                                                        <li>
+                                                            <dt>index.html</dt>
+                                                            <dd><strong>Página inicial do site</strong>. Informações do evento que está sendo simulado como meio de apresentar as habilidades desenvolvidas durante a disciplina.</dd>
+                                                        </li>
+                                                    </div>
+                                                    <div class="topico">
+                                                        <li>
+                                                            <dt>form.html</dt>
+                                                            <dd><strong>Formulário para preenchimento de dados</strong>. O formulário solicita as seguintes informações: nome, sobrenome, e-mail e país. Todos os campos possuem validação dos dados, dessa forma, dados indesejados são evitados.</dd>
+                                                        </li>
+                                                    </div>
+                                                    <div class="topico">
+                                                        <li>
+                                                            <dt>formAction.html</dt>
+                                                            <dd><strong>Recebimento dos dados de formulário</strong>. Os dados enviados pelo formulário são recebidos via JavaScript, com a utilização do método GET.<br>Para a visualização dos dados, foi criado um cartão por meio da linguagem CSS, onde na parte de trás se encontram as informações inseridas, apresentadas em forma de tabela.</dd>
+                                                        </li>
+                                                    </div>
+                                                    <div class="topico">
+                                                        <li>
+                                                            <dt>about.html</dt>
+                                                            <dd><strong>Informações sobre o site</strong>. Apresentação da atividade proposta e informações do autor.</dd>
+                                                        </li>
+                                                    </div>
+                                                </dl>
+                                            </ol>
+                                        </article>
+                                        <article>
+                                            <h3>Estilos do site</h3>
+                                            <div>
+                                                <h4>Paleta de cores</h4>
+                                                <p>Para garantir a harmonia de cores no site, a seguinte paleta de cores foi utilizada:</p>
+                                                <div id="paletaCores">
+                                                    <div class="cor"><p id="cor-azul">#424242</p></div>
+                                                    <div class="cor"><p id="cor-roxo">#8a2be2</p></div>
+                                                    <div class="cor"><p id="cor-azul-claro">#7171e1</p></div>
+                                                    <div class="cor"><p id="cor-cinza">#CDCDCD</p></div>
+                                                </div>
+                                            </div>
+                                            <div id="fontes">
+                                                <h4>Fontes</h4>
+                                                <ul>
+                                                    <li id="fontePoppins">Poppins</li>
+                                                    <li id="fonteAveriaSerifLibre">Averia Serif Libre</li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                    </section>
+                                </div>
+                                <div id="direita">
+                                    <section id="autora">
+                                        <h2>Autora</h2>
+                                        <article>
+                                            <div class="texto-perfil">
+                                                <p class="nome-autora">Camila Harumi</p>
+                                                <p>Tecnólogo em Análise e Desenvolvimento de Sistemas</p>
+                                            </div>
+                                            <div id="redes-sociais">
+                                                <ul>
+                                                    <div class="botao-rede-social">
+                                                        <li><i class="fa fa-github" aria-hidden="true"><a href="#" target="_blank"></a></i></li>
+                                                    </div>
+                                                    <div class="botao-rede-social">
+                                                        <li><i class="fa fa-linkedin" aria-hidden="true"><a href="#" target="_blank"></a></i></li>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                            <hr>
+                                            <div>
+                                                <p>Atividade oferecida por: PUCPR</p>
+                                                <p>Disciplina: Fundamentos de Programação Web</p>
+                                            </div>
+                                        </article>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+                <div class="barra-tarefas">
+                    <div class="botao-inscrever">
+                        <a href="form.html">Inscreva-se</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="footer-logo">
+            <img class="imagem-logo" src="imagens/logo-tech.png" alt="tech logo">
+        </div>
+        <div id="compartilhar">
+            <ul>
+                <div class="botao-rede-social">
+                    <li><i class="fa fa-twitter fa-2x" aria-hidden="true"><a href="#" target="_blank"></a></i></li>
+                </div>
+                <div class="botao-rede-social">
+                    <li><i class="fa fa-instagram fa-2x" aria-hidden="true"><a href="#" target="_blank"></a></i></li>
+                </div>
+                <div class="botao-rede-social">
+                    <li><i class="fa fa-facebook-official fa-2x" aria-hidden="true"><a href="#" target="_blank"></a></i></li>
+                </div>
+                <div class="botao-rede-social">
+                    <li><i class="fa fa-twitch fa-2x" aria-hidden="true"><a href="#" target="_blank"></a></i></li>
+                </div>
+                <div class="botao-rede-social">
+                    <li><i class="fa fa-youtube-play fa-2x" aria-hidden="true"><a href="#" target="_blank"></a></i></li>
+                </div>
+            </ul>
+        </div>
+
+        <div id="direitos">
+            <p>&copy; 2023 Todos os direitos reservados</p>
+            <p>Desenvolvido por Camila Harumi.</p>
+        </div>
+    </footer>
+
+    <script src="script/script.js"></script>
+</body>
+</html>

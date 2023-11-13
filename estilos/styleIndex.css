@@ -1,0 +1,358 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* MAIN -> Informações */
+
+section#informacoes {
+    background-image: url(../imagens/imagem-fundo.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.caixa-janela {
+    padding: 20px 10px;
+}
+
+.janela {
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    border: 5px solid rgb(5, 96, 208);
+    border-radius: 5px;
+    background-color: white;
+}
+
+.titulo-janela {
+    background-color: rgb(5, 96, 208);
+    text-align: left;
+    padding: 10px;
+}
+
+.titulo-janela p {
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+}
+
+.botao-close-icon {
+    display: inline-block;
+    color: white;
+    background-color: rgb(234, 76, 76);
+    width: fit-content;
+    height: fit-content;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+.botao-maximize-icon,
+.botao-minimize-icon {
+    display: inline-block;
+    color: white;
+    background-color: rgb(76, 102, 234);
+    width: fit-content;
+    height: fit-content;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+.botoes-janela {
+    float: right;
+}
+
+.texto-marcado {
+    color: blueviolet;
+}
+
+div#container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 50px;
+}
+
+article#caixa {
+    display: inline-block;
+}
+
+section#informacoes .caixa-conteudo {
+    display: inline-block;
+}
+
+section#informacoes .caixa-conteudo .titulo-caixa {
+    color: black;
+    font-size: 16px;
+    padding: 10px;
+    margin: 0px;
+    border-bottom: 1px solid black;
+}
+
+section#informacoes .caixa-conteudo p {
+    text-align: center;
+    font-family: 'Averia Serif Libre';
+    font-size: 60px;
+    font-weight: bolder;
+    display: block;
+    max-width: 300px;
+    margin: 20px;
+}
+
+article#inscrever {
+    display: inline-block;
+    margin: 10px 15px;
+}
+
+.mensagem {
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    max-width: 240px;
+    margin-bottom: 25px;
+}
+
+.botao-inscrever {
+    display: block;
+    background-color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    border: 1px solid black;
+    cursor: pointer;
+    transition-duration: 1.0s;
+}
+
+.botao-inscrever:hover {
+    background-image: linear-gradient(to right, blueviolet, rgb(113, 113, 225));
+    color: white;
+}
+
+/* MAIN -> Cronograma */
+
+section#cronograma {
+    padding: 20px 10px;
+}
+
+section#cronograma .janela {
+    width: 100%;
+    margin: 20px 0px;
+}
+
+div#caixa-cronograma {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section#cronograma div#datas button {
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    font-weight: bolder;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+section#cronograma div#datas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+section#cronograma div#datas button:hover {
+    background-color: rgb(5, 96, 208);
+    color: white;
+    height: 100%;
+}
+
+section#cronograma .caixa-conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.cronograma-dia {
+    width: 100%;
+}
+
+.titulo-dia {
+    background-image: linear-gradient(to right, blueviolet, rgb(113, 113, 225));
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+table {
+    background-color: white;
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.tabela-atividade {
+    width: 80%;
+}
+
+th, td {
+    padding: 20px;
+    text-align: left;
+}
+
+th {
+    border-bottom: 1px solid black;
+    background-color: white;
+    color: black;
+    width: 100px;
+}
+
+tr {
+    transition: 0.2s;
+}
+
+tr:hover {
+    background-color: rgb(206, 206, 206);
+}
+
+.cronograma-completo {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.botao-cronograma-completo {
+    display: block;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+    border: 1px solid black;
+    cursor: pointer;
+    transition-duration: 1.0s;
+}
+
+.botao-cronograma-completo:hover {
+    color: white;
+    background-image: linear-gradient(to right, blueviolet, rgb(113, 113, 225));
+
+}
+
+/* MAIN -> Últimas notícias */
+
+section#ultimas-noticias {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+section#ultimas-noticias #noticias {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: fit-content;
+    background-color: white;
+}
+
+.caixa-noticia {
+    display: inline-block;
+    background-color: white;
+    width: 350px;
+    height: 350px;
+    padding: 15px;
+    margin: 20px;
+    border: 1px solid;
+    border-image: linear-gradient(to right, blueviolet, rgb(113, 113, 225)) 30;
+    transition: 0.2s;
+}
+
+.caixa-noticia:hover {
+    border-top: 10px solid;
+    border-image: linear-gradient(to right, blueviolet, rgb(113, 113, 225)) 30;
+}
+
+.caixa-noticia .titulo-noticia {
+    font-size: 20px;
+}
+
+.saiba-mais {
+    display: block;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    width: fit-content;
+    margin-top: 10px;
+}
+
+.saiba-mais:hover {
+    color: blueviolet;
+}
+
+/* MAIN -> Patrocinadores */
+
+div#patrocinadores p {
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: center;
+    margin: 20px 0px 20px;
+}
+
+div#logos-patrocinadores {
+    display: block;
+    text-align: center;
+}
+
+div#logos-patrocinadores ul {
+    list-style-type: none;
+}
+
+div#logos-patrocinadores ul li {
+    display: inline-block;
+}
+
+div#patrocinadores div#logos-patrocinadores img#logo-the-best-food,
+div#patrocinadores div#logos-patrocinadores img#logo-bluecube,
+div#patrocinadores div#logos-patrocinadores img#logo-voyage {
+    height: 50px;
+    margin: 20px;
+}
+
+div#patrocinadores div#logos-patrocinadores img#logo-kaleidoscope {
+    display: inline-block;
+    margin: 20px;
+}
+
+@media (max-width: 800px) {
+    div#container {
+      flex-direction: column;
+    }
+  }
+
+@media(max-width: 1000px) {
+    section#cronograma div#datas {
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 1000px) {
+    section#ultimas-noticias #noticias {
+        flex-direction: column;
+    }
+}

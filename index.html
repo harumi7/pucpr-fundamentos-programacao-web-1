@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/styleIndex.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+
+    <title>TECH</title>
+</head>
+<body onresize="mudouTamanho()">
+    <script type="text/javascript" src="script/script.js"></script>
+    <header>
+        <div class="caixa-logo">
+            <a href="index.html"><img class="imagem-logo" src="imagens/logo-tech.png" alt="tech logo"></a>
+        </div>
+
+        <i id="menu-hamburguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <nav id="itens">
+            <ul>
+                <li><a id="active" class="menu-pagina" href="index.html" target="_self">Início</a></li>
+                <li><a class="menu-pagina" href="form.html" target="_self">Inscreva-se</a></li>
+                <li><a class="menu-pagina" href="about.html" target="_self">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="informacoes">
+            <div class="caixa-janela">
+                <div class="janela">
+                    <div class="titulo-janela">
+                        <p>TECH: 20ª edição</p>
+                        <div class="botoes-janela">
+                            <div class="botao-minimize-icon">
+                                <i class="fa fa-window-minimize" aria-hidden="true"></i>
+                            </div>
+                            <div class="botao-maximize-icon">
+                                <i class="fa fa-window-maximize" aria-hidden="true"></i>
+                            </div>
+                            <div class="botao-close-icon">
+                                <i class="fa fa-close" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="container">
+                        <article id="caixa">
+                            <div class="caixa-conteudo">
+                                <p>08 a 12 de novembro</p>
+                            </div>
+                        </article>
+                        <article id="inscrever">
+                            <p class="mensagem">Venha para um novo mundo: o maior <span class="texto-marcado">evento de tecnologia</span> do Brasil!</p>
+                            <button class="botao-inscrever" type="button" onclick="window.location.href='form.html'">Inscreva-se</button>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cronograma">
+            <h1>Cronograma</h1>
+            <article>
+                <div id="datas">
+                    <button type="button" onclick="document.location.href='#primeiro-dia'">08/11</button>
+                    <button type="button" onclick="document.location.href='#segundo-dia'">09/11</button>
+                    <button type="button" onclick="document.location.href='#terceiro-dia'">10/11</button>
+                    <button type="button" onclick="document.location.href='#quarto-dia'">11/11</button>
+                    <button type="button" onclick="document.location.href='#quinto-dia'">12/11</button>
+                </div>
+
+                <div id="caixa-cronograma">
+                    <div class="janela">
+                        <div class="titulo-janela">
+                            <p>Cronograma</p>
+                        </div>
+                        <div class="caixa-conteudo">
+                            <div id="primeiro-dia" class="cronograma-dia">
+                                <h3 class="titulo-dia">08/11 - Quarta-feira</h3>
+                                <table>
+                                    <tr>
+                                        <th class="tabela-horario">Horário</th>
+                                        <th class="tabela-atividade">Atividade</th>
+                                    </tr>
+                                    <tr>
+                                        <td>08:00 - 10:30</td>
+                                        <td>Abertura - Dia 1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>09:00 - 18:00</td>
+                                        <td>Retirada do pacote TECH</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10:30 - 19:00</td>
+                                        <td>Disponibilidade dos stands</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15:00 - 19:00</td>
+                                        <td>TECH CODE COOP: Competição de código em equipe</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div id="segundo-dia" class="cronograma-dia">
+                                <h3 class="titulo-dia">09/11 - Quinta-feira</h3>
+                                <table>
+                                    <tr>
+                                        <th class="tabela-horario">Horário</th>
+                                        <th class="tabela-atividade">Atividade</th>
+                                    </tr>
+                                    <tr>
+                                        <td>08:00 - 10:30</td>
+                                        <td>Abertura - Dia 2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>09:00 - 18:00</td>
+                                        <td>Retirada do pacote TECH</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10:30 - 19:00</td>
+                                        <td>Disponibilidade dos stands</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15:00 - 17:00</td>
+                                        <td>Maiores anúncios de lançamentos de video-games</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div id="terceiro-dia" class="cronograma-dia">
+                                <h3 class="titulo-dia">10/11 - Sexta-feira</h3>
+                                <table>
+                                    <tr>
+                                        <th class="tabela-horario">Horário</th>
+                                        <th class="tabela-atividade">Atividade</th>
+                                    </tr>
+                                    <tr>
+                                        <td>08:00 - 10:30</td>
+                                        <td>Apresentação de abertura - Dia 3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>09:00 - 18:00</td>
+                                        <td>Retirada do pacote TECH</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10:30 - 19:00</td>
+                                        <td>Disponibilidade dos stands</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15:00 - 17:00</td>
+                                        <td>Maiores anúncios de lançamentos de tecnologias na área de TI</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div id="quarto-dia" class="cronograma-dia">
+                                <h3 class="titulo-dia">11/11 - Segunda-feira</h3>
+                                <table>
+                                    <tr>
+                                        <th class="tabela-horario">Horário</th>
+                                        <th class="tabela-atividade">Atividade</th>
+                                    </tr>
+                                    <tr>
+                                        <td>08:00 - 10:30</td>
+                                        <td>Apresentação de abertura - Dia 4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>09:00 - 18:00</td>
+                                        <td>Retirada do pacote TECH</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10:30 - 19:00</td>
+                                        <td>Disponibilidade dos stands</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15:00 - 19:00</td>
+                                        <td>TECH GAME COOP: Competição de video-games em equipe</td>
+                                    </tr>
+                                </table>
+                            </div>
+                    
+                            <div id="quinto-dia" class="cronograma-dia">
+                                <h3 class="titulo-dia">12/11 - Segunda-feira</h3>
+                                <table>
+                                    <tr>
+                                        <th class="tabela-horario">Horário</th>
+                                        <th class="tabela-atividade">Atividade</th>
+                                    </tr>
+                                    <tr>
+                                        <td>08:00 - 10:30</td>
+                                        <td>Apresentação de abertura - Dia 5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>09:00 - 18:00</td>
+                                        <td>Retirada do pacote TECH</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10:30 - 19:00</td>
+                                        <td>Disponibilidade dos stands</td>
+                                    </tr>
+                                    <tr>
+                                        <td>14:30 - 18:00</td>
+                                        <td>TECH Awards</td>
+                                    </tr>
+                                    <tr>
+                                        <td>18:00 - 20:00</td>
+                                        <td>TECH 2023: Encerramento</td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="cronograma-completo">
+                                <button class="botao-cronograma-completo" type="button" onclick="window.location.href='#'">
+                                    Confira o cronograma completo &gt;&gt;
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section id="ultimas-noticias">
+            <h1>Últimas notícias</h1>
+            <div class="janela">
+                <div class="titulo-janela">
+                    <p>Notícias</p>
+                </div>
+                <div id="noticias">
+                    <article class="caixa-noticia">
+                        <div class="conteudo-noticia">
+                            <h3 class="titulo-noticia">Três novos convidados internacionais confirmaram presença no Evento TECH 2023</h3>
+                            <p>Após o sucesso do evento nos últimos anos, três novos convidados confirmaram presença este ano.</p>
+                        </div>
+                        <a class="saiba-mais" href="#">Saiba mais</a>
+                    </article>
+                    <article class="caixa-noticia">
+                        <div class="conteudo-noticia">
+                            <h3 class="titulo-noticia">Evento TECH 2023 contará com inúmeros stands: confira o mapa do evento</h3>
+                            <p>No Evento TECH 2023, o local do evento irá contar com mais de 100 stands preparados para receber o público.</p>
+                            <a class="saiba-mais" href="#">Saiba mais</a>
+                        </div>
+                    </article>
+                    <article class="caixa-noticia">
+                        <div class="conteudo-noticia">
+                            <h3 class="titulo-noticia">Devido o crescente número de participantes internacionais nos últimos anos, o aplicativo TECH Translation será lançado</h3>
+                            <p>A partir deste ano, o aplicativo TECH Translation estará disponível para os participantes do evento.</p>
+                            <a class="saiba-mais" href="#">Saiba mais</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <div id="patrocinadores">
+            <p>Nossos patrocinadores</p>
+            <div id="logos-patrocinadores">
+                <ul>
+                    <li><img id="logo-the-best-food" src="imagens/logo-the-best-food.png" alt="the best food logo"></li>
+                    <li><img id="logo-kaleidoscope" src="imagens/logo-kaleidoscope.png" alt="kaleidoscope logo"></li>
+                    <li><img id="logo-bluecube" src="imagens/logo-bluecube.png" alt="blue cube logo"></li>
+                    <li><img id="logo-voyage" src="imagens/logo-voyage.png" alt="voyage logo"></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer-logo">
+            <img class="imagem-logo" src="imagens/logo-tech.png" alt="tech logo">
+        </div>
+        <div id="compartilhar">
+            <ul>
+                <div class="botao-rede-social">
+                    <li><i class="fa fa-twitter fa-2x" aria-hidden="true"><a href="#" target="_blank"></a></i></li>
+                </div>
+                <div class="botao-rede-social">
+                    <li><i class="fa fa-instagram fa-2x" aria-hidden="true"><a href="#" target="_blank"></a></i></li>
+                </div>
+                <div class="botao-rede-social">
+                    <li><i class="fa fa-facebook-official fa-2x" aria-hidden="true"><a href="#" target="_blank"></a></i></li>
+                </div>
+                <div class="botao-rede-social">
+                    <li><i class="fa fa-twitch fa-2x" aria-hidden="true"><a href="#" target="_blank"></a></i></li>
+                </div>
+                <div class="botao-rede-social">
+                    <li><i class="fa fa-youtube-play fa-2x" aria-hidden="true"><a href="#" target="_blank"></a></i></li>
+                </div>
+            </ul>
+        </div>
+
+        <div id="direitos">
+            <p>&copy; 2023 Todos os direitos reservados</p>
+            <p>Desenvolvido por Camila Harumi.</p>
+        </div>
+    </footer>
+</body>
+</html>

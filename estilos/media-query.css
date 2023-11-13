@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    i#menu-hamburguer {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav#itens {
+        display: inline-block;
+        width: 100%;
+    }
+
+    nav ul {
+        float: right;
+        width: fit-content;
+        padding: 0px;
+        flex-direction: row;
+    }
+
+    nav li {
+        display: inline-block;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    nav li .menu-pagina {
+        height: fit-content;
+    }
+
+    nav li .menu-pagina:hover {
+        background-color: transparent;
+    }
+}
